@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Life Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Life Survey Form</h1>
+    <p id="description">A form to rate your life experiences so far.</p>
+    <form method="POST" action="" id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+        <label id="name-label" for="name">Name*:</label>
+        <input required id="name" type="text" placeholder="Your Full Name"/>
+      </p>
+      <p>
+        <label id="email-label" for="email">Email*:</label>
+        <input required id="email" type="email" placeholder="example@email.com"/>
+      </p>
+      <p>
+        <label id="number-label" for="number">Age*:</label>
+        <input required id="number" type="number" min="0" max="300" placeholder="0-300"/>
+      </p>
+      </fieldset>
+      <fieldset>
+        <legend>Experiences</legend>
+        <input disabled checked type="checkbox" id="birth" value="birth" name="experience">
+        <label for="birth">Birth</label>
+        <input type="checkbox" id="disability" value="disability" name="experience">
+        <label for="disability">Disability</label>
+        <input type="checkbox" id="drug-abuse" value="drug-abuse" name="experience">
+        <label for="drug-abuse">Drug Abuse</label>
+        <input type="checkbox" id="alcohol-abuse" value="alcohol-abuse" name="experience">
+        <label for="alcohol-abuse">Alcohol Abuse</label>
+        <input type="checkbox" id="sickness" value="sickness" name="experience">
+        <label for="sickness">Sickness</label>
+        <input type="checkbox" id="traumatic-experience" value="traumatic-experience" name="experience">
+        <label for="traumatic-experience">Traumatic Experience</label>
+        <input type="checkbox" id="parents" value="parents" name="experience">
+        <label for="parents">Shitty Parents/No Parents</label>
+        <input type="checkbox" id="partners" value="partners" name="experience">
+        <label for="partners">Shitty Partners/No Partners</label>
+        <input type="checkbox" id="marriage" value="marriage" name="experience">
+        <label for="marriage">Marriage</label>
+        <input type="checkbox" id="divorce" value="divorce" name="experience">
+        <label for="divorce">Divorce</label>
+        <input type="checkbox" id="children" value="children" name="experience">
+        <label for="children">Children</label>
+        <input type="checkbox" id="nirvana" value="nirvana" name="experience">
+        <label for="nirvana">Reached Nirvana</label>
+        <input type="checkbox" id="death" value="death" name="experience">
+        <label for="death">Death</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your Rating</legend>
+        <p>
+        <label for="rating">Rate life:</label>
+        <select required id="dropdown">
+          <option disabled selected></option>
+          <option>1/5</option>
+          <option>2/5</option>
+          <option>3/5</option>
+          <option>4/5</option>
+          <option>5/5</option>
+        </select>
+        <p>
+          <label for="recommend">Would you recommend life to others?</label>
+          <input type="radio" id="yes-option" value="yes" name="recommend">
+          <label for="yes-option">Yes</label>
+          <input type="radio" id="no-option" value="no" name="recommend">
+          <label for="no-option">No</label>
+        </p>
+        <p>
+          <label>Other comments:</label>
+          <textarea placeholder="Write your comments here."></textarea>
+        </p>
+      </fieldset>
+        <button id="reset">End Life</button>
+        <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
